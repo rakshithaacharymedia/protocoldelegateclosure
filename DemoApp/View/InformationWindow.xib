@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationWindow" customModule="DemoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="directionButton" destination="gMI-Qz-i9e" id="SBM-qx-pLI"/>
+                <outlet property="nameLabel" destination="2RF-om-eap" id="tUf-Cb-kF6"/>
+                <outlet property="placeLabel" destination="nOt-PE-33F" id="7DZ-0j-hCw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="xa0-3R-Hi3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="221"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RF-om-eap">
+                    <rect key="frame" x="5" y="5" width="355" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="xdU-gg-ffy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOt-PE-33F">
+                    <rect key="frame" x="5" y="78" width="355" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="fB7-hH-6Z7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-Qz-i9e">
+                    <rect key="frame" x="5" y="159" width="142" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="90" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="106" maxY="1"/>
+                    <state key="normal" title="Direction" image="rightArrow-1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="directionButtonTapped:" destination="-1" eventType="touchUpInside" id="NfD-Z0-d4u"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nOt-PE-33F" secondAttribute="trailing" constant="10" id="4Q7-pz-HG0"/>
+                <constraint firstItem="nOt-PE-33F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="JPD-9U-BbX"/>
+                <constraint firstAttribute="trailing" secondItem="2RF-om-eap" secondAttribute="trailing" constant="10" id="Lq0-xz-Foi"/>
+                <constraint firstItem="2RF-om-eap" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="ifc-hF-yLh"/>
+                <constraint firstItem="2RF-om-eap" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="lXV-HD-Yw0"/>
+                <constraint firstItem="nOt-PE-33F" firstAttribute="top" secondItem="2RF-om-eap" secondAttribute="bottom" constant="23" id="uH7-kO-ho7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="UzY-6w-OKR"/>
+            <point key="canvasLocation" x="-813" y="-446.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rightArrow-1" width="131" height="142"/>
+    </resources>
+</document>
